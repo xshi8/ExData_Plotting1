@@ -15,7 +15,7 @@ for (i in c(3,4,5,7,8,9)){
 }
 df$DateTime <- strptime(paste(df$Date,df$Time),"%d/%m/%Y %T")
 
-png(file="plot4.png",width=480,height=480,units="px")
+png(file="plot4.png",width=480,height=480,units="px",bg="transparent")
 
 par(mfcol=c(2,2))
 
@@ -37,8 +37,8 @@ plot(x=df$DateTime,y=df$Sub_metering_3,ylab="Energy sub metering",
 par(new=F)
 
 legend(x='topright',legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'),
-       col=c("Black","red","blue"),lty="solid",
-       y.intersp=.6,bty='n'
+       col=c("Black","red","blue"),lty="solid",cex=0.95,
+       y.intersp=0.9,bty='n'
          )
 
 #topright

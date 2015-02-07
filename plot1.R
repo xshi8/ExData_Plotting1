@@ -12,7 +12,7 @@ df <- read.table("household_power_consumption.txt",sep=";", na.strings="?",colCl
 
 ##
 df[,3] <- as.numeric(df[,3])
-png(file="plot1.png",width=480,height=480,units="px")
+png(file="plot1.png",width=480,height=480,units="px",bg="transparent")
 hist(df$Global_active_power,main="Global Active Power",
     xlab="Global Active Power (kilowatts)", col="red")
 dev.off()

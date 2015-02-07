@@ -16,7 +16,7 @@ for (i in 7:9){
     }
 df$DateTime <- strptime(paste(df$Date,df$Time),"%d/%m/%Y %T")
 
-png(file="plot3.png",width=480,height=480,units="px")
+png(file="plot3.png",width=480,height=480,units="px",bg="transparent")
 
 yrange<-range(c(df$Sub_metering_1,df$Sub_metering_2,df$sub_metering_3))
 
